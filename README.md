@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository showcases a comprehensive end-to-end data engineering solution built on Azure. The project integrates and utilizes various Azure services to orchestrate, transform, and visualize data. The pipeline includes Azure Data Factory (ADF) for orchestration, Azure Databricks for data transformation using Python notebooks, Azure Synapse Analytics for data warehousing, and Power BI for visualization.
+This repository showcases a comprehensive end-to-end data engineering solution built on Azure. The project integrates and utilizes various Azure services to orchestrate, transform, and visualize data. The pipeline includes Azure Data Factory (ADF) for orchestration, Azure Databricks for data transformation using PySpark notebooks, Azure Synapse Analytics for data warehousing, and Power BI for visualization.
 
 ## Project Structure
 

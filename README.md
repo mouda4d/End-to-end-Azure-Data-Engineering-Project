@@ -107,7 +107,10 @@ Azure Databricks provides a collaborative environment for big data analytics usi
 
 4. **Link the Two Notebooks to ADF**:
    ![ADF+DB pipeline](https://drive.google.com/uc?id=1Dq5EoTfOJ31LXK5qtSO9_badOPWJ_wvY)
-
+   
+   Storage account:
+   
+   ![Azure Data Storage Account](https://drive.google.com/uc?id=1Y8XoFQRDOxcppqzrup8_erJs-wXiMCVm)
 ### 4. Azure Synapse Analytics Setup
 
 Azure Synapse Analytics integrates big data and data warehousing capabilities.

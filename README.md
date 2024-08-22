@@ -8,6 +8,8 @@ This repository showcases a comprehensive end-to-end data engineering solution b
 
 The project is organized into the following components:
 
+- **Key Vault**: used to manage secrets. Key Vault eliminates the need for developers to store security information in their code.
+- **Azure storage Account**: scalable, durable cloud storage, backup, and recovery solutions for any data, big or small.
 - **Azure Data Factory (ADF)**: For data orchestration, workflow automation, and running Databricks notebooks.
 - **Azure Databricks**: For data processing, including bronze-to-silver and silver-to-gold transformations using Python notebooks.
 - **Azure Synapse Analytics**: For data warehousing and integration.
@@ -32,6 +34,10 @@ Before setting up the project, ensure you have:
 ### 2. Azure Data Factory (ADF) Setup
 
 Azure Data Factory (ADF) orchestrates data movement and workflow automation, including running Databricks notebooks for data transformations.
+
+0. **Used Key Vault for secrets**:
+
+![secrets](https://drive.google.com/uc?id=1to_glhfyFehClTErYZrZ11i-SerMqRoJ)
 
 1. **Create a Data Pipeline**:
    - **Access ADF Studio**:
@@ -69,6 +75,8 @@ Azure Data Factory (ADF) orchestrates data movement and workflow automation, inc
      - Set up triggers for scheduled or event-based pipeline execution.
    - **Monitor Pipeline Runs**:
      - Use the "Monitor" tab to track pipeline status and logs.
+       
+![ADF pipeline](https://drive.google.com/uc?id=1RREJ8Toc2Fh7a6SW4PBw96wg3slklDc0)
 
 ### 3. Azure Databricks Setup
 
@@ -97,12 +105,8 @@ Azure Databricks provides a collaborative environment for big data analytics usi
      - Develop and test Spark code for data transformations.
      - Execute and validate the code.
 
-4. **Run and Monitor Jobs**:
-   - **Submit Jobs**:
-     - Under "Jobs," create a new job for running notebooks or Spark tasks.
-     - Configure scheduling or on-demand execution.
-   - **Monitor Jobs**:
-     - Track job execution status and performance metrics.
+4. **Link the Two Notebooks to ADF**:
+   ![ADF+DB pipeline](https://drive.google.com/uc?id=1Dq5EoTfOJ31LXK5qtSO9_badOPWJ_wvY)
 
 ### 4. Azure Synapse Analytics Setup
 
@@ -122,12 +126,19 @@ Azure Synapse Analytics integrates big data and data warehousing capabilities.
    - **Configure Performance**:
      - Adjust performance and scaling settings based on workload needs.
 
-4. **Data Loading and Transformation**:
-   - **Load Data**:
-     - Use Synapse Studio to load data into SQL pools from various sources.
-   - **Run Queries and Transform Data**:
-     - Execute SQL queries for data transformation and analysis.
+4.   - **Run Queries **:
+     - Execute SQL queries for analysis.
+     - Standard Procedure was used to Create Views:
+     - 
+![synapse procedure](https://drive.google.com/uc?id=1VrVbOxdthX_edFC2_CqO3EqhksSIUDcn)
 
+Synapse pipeline:
+
+![synapse pipeline](https://drive.google.com/uc?id=1DPHrLYj99UG1zQIdmAKzAYsxdrI1eYed)
+
+Synapse Query:
+
+![synapse Query](https://drive.google.com/uc?id=11mTTuSCTZ2zEsGIm7efpbB6MtNjaPWTk)
 ### 5. Power BI Setup
 
 Power BI provides interactive data visualization and reporting.
@@ -149,6 +160,10 @@ Power BI provides interactive data visualization and reporting.
      - Publish reports to Power BI Service for sharing and access control.
    - **Share and Collaborate**:
      - Share reports with stakeholders and set up permissions.
+
+     Dashboard:
+
+     ![Dashboard](https://drive.google.com/uc?id=13gmbddiitaFWkhbW1FCHaJNDD_IA0yjq)
 
 ## Conclusion
 
